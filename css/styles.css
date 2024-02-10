@@ -501,11 +501,15 @@ background-color: #31d0aa;
   gap: 16px;
 }
 .form-label{
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
+}
+.input-container{
+  position: relative;
 }
 .modal-input{
   width: 100%;
@@ -521,6 +525,7 @@ background-color: #31d0aa;
   border-color: #4D5AE5;
 }
 .input-icon{
+  position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
@@ -530,7 +535,7 @@ background-color: #31d0aa;
   fill: #4D5AE5;
 }
 .modal-comment{
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 .comment-container{
   width: 100%;
@@ -561,6 +566,7 @@ background-color: #31d0aa;
 }
 .span-privacy{
   width: 16px;
+  height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   height: 16px;
@@ -570,7 +576,7 @@ background-color: #31d0aa;
   justify-content: center;
   fill: transparent;
 }
-.visually-hidden:checked .span-label{
+.visually-hidden:checked .span-privacy{
   background-color:#404bbf;
   border: none;
   fill:#F4F4FD;
