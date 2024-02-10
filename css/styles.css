@@ -590,7 +590,7 @@ background-color: #31d0aa;
   justify-content: center;
   fill: transparent;
 }
-.modal-input-privacy:checked .modal-privacy.span-privacy{
+.modal-input-privacy:checked + .modal-privacy >.span-privacy{
   background-color:#404bbf;
   border: none;
   fill:#F4F4FD;
